@@ -1,2 +1,10 @@
 # falcor-express-demo
-Demonstration end point for Falcor express
+Demo usage of falcor express middleware
+
+## Usage
+```
+clone repo
+npm install
+npm start
+```
+
