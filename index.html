@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src="falcor.browser.js">
+    </script>
+    <script>
+        var model = new falcor.Model({
+            source: new falcor.HttpDataSource('/model.json')
+        });
+
+        model.get('list[0..3].name').then(function(result) {
+            console.log(result);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
