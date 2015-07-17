@@ -7,8 +7,8 @@
             source: new falcor.HttpDataSource('/model.json')
         });
 
-        model.get('list[0..3].name').then(function(result) {
-            console.log(result);
+        model.get('genrelist[0..5].titles[0..5].name').then(function (data) {
+            console.log(data);
         });
     </script>
 </head>
