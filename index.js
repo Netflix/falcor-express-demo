@@ -2,13 +2,13 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var FalcorServer = require('falcor-express');
-var FalcorRouterDemo = require('falcor-router-demo');
+var falcorRouterDemoFactory = require('falcor-router-demo');
 
-app.use(bodyParser.text({ type: 'text/*' }));
+app.use(bodyParser.urlencoded({ extended: false }))
 
 // Simple middleware to handle get/post
 app.use('/model.json', FalcorServer.dataSourceRoute(function(req, res) {
-    return new FalcorRouterDemo();
+    return falcorRouterDemoFactory(1);
 }));
 
 app.use(express.static('.'));
