@@ -23,8 +23,8 @@
   "dependencies": {
     "express": "~4.11.1",
     "body-parser": "^1.12.4",
-    "falcor-router-demo": "dzannotti/falcor-router-demo#restify",
-    "falcor-express": "netflix/falcor-express"
+    "falcor-router-demo": "git+ssh://git@github.com/Netflix/falcor-router-demo.git",
+    "falcor-express": "git+ssh://git@github.com/Netflix/falcor-express.git"
   },
   "devDependencies": {
     "eslint": "^0.21.0"
