@@ -12,37 +12,37 @@
             source: new falcor.HttpDataSource('/model.json')
         });
 
-        // model.get('genrelist[0..5].titles[0..5].name').then(function (data) {
-        //     console.log(data);
-        // });
+        model.get('genrelist[0..5].titles[0..5].name').then(function (data) {
+            console.log(data);
+        });
 
-        // model.get('genrelist[0].name').then(jlog, jerror)
+        model.get('genrelist[0].name').then(jlog, jerror)
 
-        //model.get('titlesById[-1]["userRating", "name"]').then(jlog, jerror)
+        model.get('titlesById[-1]["userRating", "name"]').then(jlog, jerror)
 
-        //model.setValue('titlesById[9].userRating', 9).then(jlog, jerror)
+        model.setValue('titlesById[9].userRating', 9).then(jlog, jerror)
 
-        //model.setValue('genrelist[0].titles[2].userRating', 3).then(jlog, jerror)
+        model.setValue('genrelist[0].titles[2].userRating', 3).then(jlog, jerror)
 
-        // model.get('genrelist[0].titles[0..2]["userRating", "name"]').then(function(x) {
-        //     jlog(x)
-        //     model.setValue('genrelist[0].titles[1].userRating', 8).then(function(y) {
-        //         jlog(y)
-        //         model.get('genrelist[0].titles[0..2]["userRating", "name"]').then(jlog, jerror)
-        //     }, jerror)
-        // }, jerror)
+        model.get('genrelist[0].titles[0..2]["userRating", "name"]').then(function(x) {
+            jlog(x)
+            model.setValue('genrelist[0].titles[1].userRating', 8).then(function(y) {
+                jlog(y)
+                model.get('genrelist[0].titles[0..2]["userRating", "name"]').then(jlog, jerror)
+            }, jerror)
+        }, jerror)
 
-        //model.get('titlesById[26,5,4].userRating').then(jlog, jerror)
+        model.get('titlesById[26,5,4].userRating').then(jlog, jerror)
 
-        //model.get('titlesById[3,4,5]["name", "year", "description"]').then(jlog, jerror)
+        model.get('titlesById[3,4,5]["name", "year", "description"]').then(jlog, jerror)
 
-        // model.get('genrelist[10].titles.length').then(jlog, jerror)
-        // model.get('genrelist[10].titles[0..10]["name", "year", "boxshot"]').then(jlog, jerror)
+        model.get('genrelist[10].titles.length').then(jlog, jerror)
+        model.get('genrelist[10].titles[0..10]["name", "year", "boxshot"]').then(jlog, jerror)
 
-        //model.get('genrelist[0].titles[0]').subscribe(jlog, jerror)
+        model.get('genrelist[0].titles[0]').subscribe(jlog, jerror)
 
+        model.get('genrelist.length').then(jlog, jerror)
 
-        //@TODO: when not authorized, this fails confusingly.
         model.get('genrelist[0].titles.length').then(function(z) {
             jlog(z)
             model.call('genrelist[0].titles.push', [{$type: "ref", value: ['titlesById', 1]}], ["name", "rating"], ["length"]).then(function(x) {
@@ -56,8 +56,10 @@
             }, jerror);
         }, jerror)
 
-        //@TODO: add authorization cookie.
+        model.setValue('titlesById[0].userRating', 4).then(jlog, jerror)
+        model.get('titlesById[1]["userRating", "rating"]').then(jlog, jerror)
 
+        model.get('titlesById[0, 1, 2, 3]["year", "rating", "userRating"]').then(jlog, jerror)
 
     </script>
 </head>
