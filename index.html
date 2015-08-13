@@ -14,7 +14,7 @@
         var jlog = function(x) { console.log(JSON.stringify(x, null, 3)); };
         var jerror = function(x) { console.error(JSON.stringify(x, null, 3)); };        
 
-        //tests:
+        //examples:
 
         // model.get('genrelist[0..5].titles[0..5].name').then(function (data) {
         //     console.log(data);
@@ -66,6 +66,11 @@
         // model.get('titlesById[0, 1, 2, 3]["year", "rating", "userRating"]').then(jlog, jerror)
 
         // model.get('titlesById[1234].userRating').then(jlog, jerror)
+        
+        // model.get('genrelist.myList.name').then(jlog, jerror)
+        // model.get('genrelist.myList.titles[0..1]["name", "boxshot", "rating", "userRating"').then(jlog, jerror)
+        // model.get('genrelist.myList.titles.length').then(jlog, jerror)
+        
 
     </script>
 </head>
