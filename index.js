@@ -1,3 +1,4 @@
+// This file starts the server and exposes the Router at /model.json
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -8,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Simple middleware to handle get/post
 app.use('/model.json', FalcorServer.dataSourceRoute(function(req, res) {
+    // Passing in the user ID, this should be retrieved via some auth system
     return falcorRouterDemoFactory("1");
 }));
 
