@@ -23,7 +23,7 @@
   "dependencies": {
     "express": "~4.11.1",
     "body-parser": "^1.12.4",
-    "falcor-router-demo": "git+ssh://git@github.com/Netflix/falcor-router-demo.git",
+    "falcor-router-demo": "1.0.3",
     "falcor-express": "0.1.1"
   },
   "devDependencies": {
