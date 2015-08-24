@@ -23,7 +23,6 @@ This will download a webpage which makes several requests from data from the mod
 
 For more information on how the Router works and the structure of model.json, see the Router source at https://github.com/Netflix/falcor-router-demo.
 
---------------
+
 [1]: https://www.npmjs.com/package/gulp-nodemon    "gulp-nodemon"
 [2]: https://www.npmjs.com/package/browser-sync    "browser-sync"
---------------
