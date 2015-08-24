@@ -15,10 +15,9 @@ app.use('/model.json', FalcorServer.dataSourceRoute(function(req, res) {
 
 app.use(express.static('.'));
 
-var server = app.listen(9090, function(err) {
+var server = app.listen(9091, function(err) {
     if (err) {
         console.error(err);
         return;
     }
-    console.log("navigate to http://localhost:9090");
 });
