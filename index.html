@@ -1,6 +1,7 @@
 <html>
 <head>
-    <script src="//netflix.github.io/falcor/build/falcor.browser.js">
+    <!-- <script src="//netflix.github.io/falcor/build/falcor.browser.js"> -->
+    <script src="/node_modules/falcor-router-demo/falcor.browser.js">
     </script>
     <script>
 
@@ -12,7 +13,7 @@
         //logging:
         var log = console.log.bind(console);
         var jlog = function(x) { console.log(JSON.stringify(x, null, 3)); };
-        var jerror = function(x) { console.error(JSON.stringify(x, null, 3)); };        
+        var jerror = function(x) { console.error(JSON.stringify(x, null, 3)); };
 
         //examples:
 
@@ -71,6 +72,9 @@
         // model.get('genrelist.myList.titles[0..1]["name", "boxshot", "rating", "userRating"').then(jlog, jerror)
         // model.get('genrelist.myList.titles.length').then(jlog, jerror)
 
+    </script>
+    <script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=1"></' + 'script>');
     </script>
 </head>
 <body>

@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "start": "node index.js"
+    "start": "node_modules/.bin/nodemon -w index.js & node watch.js"
   },
   "dependencies": {
     "express": "^4.13.3",
@@ -27,6 +27,9 @@
     "falcor-express": "^0.1.2"
   },
   "devDependencies": {
-    "eslint": "^1.7.1"
+    "eslint": "^1.7.1",
+    "browser-sync": "^2.8.2",
+    "livereload": "^0.4.1",
+    "nodemon": "^1.8.0"
   }
 }
