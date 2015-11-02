@@ -21,12 +21,12 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "~4.11.1",
-    "body-parser": "^1.12.4",
-    "falcor-router-demo": "1.0.3",
-    "falcor-express": "0.1.1"
+    "express": "^4.13.3",
+    "body-parser": "^1.14.1",
+    "falcor-router-demo": "^1.0.4",
+    "falcor-express": "^0.1.2"
   },
   "devDependencies": {
-    "eslint": "^0.21.0"
+    "eslint": "^1.7.1"
   }
 }
