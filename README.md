@@ -4,19 +4,21 @@ This project is a demonstration of how to create a stateless Virtual JSON Graph 
 
 ## Getting Started
 
-```
-clone repo
+Clone the repo: `https://github.com/Netflix/falcor-express-demo.git`
+
+``` sh
+cd falcor-express-demo
 npm install
 npm start
-Open your browser and visit http://localhost:9090
 ```
+
+Open your browser and visit: [http://localhost:9090](http://localhost:9090)
 
 ## Notes
 
-Changing HTML files will refresh the browser automatically.
-
-1. On every change of html file browser gets reloaded using [livereload][2]
-1. On every change of server file i.e `index.js`, server gets automatically restarted using [nodemon][1]
+Changing the `index.html` file will refresh the browser automatically using
+[LiveReload][2]. Changing the server `index.js` file will reload the server
+using [nodemon][1].
 
 This will download a webpage which makes several requests from data from the model.json resource on the application server, and prints the results to the console.  You will not see anything on your screen until you open up the developer console. Checkout the source of the website to see what types of operations can be performed on the model.json file on the server.
 
