@@ -28,7 +28,6 @@
   },
   "devDependencies": {
     "eslint": "^1.7.1",
-    "browser-sync": "^2.8.2",
     "livereload": "^0.4.1",
     "nodemon": "^1.8.0"
   }
